@@ -18,6 +18,29 @@ CLI wrappers for Codex, Claude Code, and opencode are launch helpers; a run is
 comparison-ready only when the adapter emits complete transcript-backed tool
 events or a trusted trace reference.
 
+## Start Here
+
+If you are new to the project, read `QUICKSTART.md` first. It gives one safe
+run, one unsafe run, and one regression demo path. After that, use
+`RESULT_INTERPRETATION.md` to read `maintainer_summary.md` and distinguish
+agent behavior failures from evidence/trace failures.
+
+## Who This Is For
+
+Good fit:
+
+- maintainers testing coding-agent regressions;
+- teams comparing local agent wrappers or model releases;
+- researchers studying evidence-first eval design;
+- developers who need synthetic data-analysis and tool-boundary scenarios.
+
+Not a good fit:
+
+- users who want a one-click consumer safety score;
+- live exploit testing;
+- claims that a product is safe or unsafe in the real world;
+- broad leaderboard-style benchmarking without reviewing trace quality.
+
 ## MVP
 
 Scenarios:
@@ -238,6 +261,8 @@ outside those safe locations.
 
 - `agent_safety_eval_harness.py` - thin CLI and orchestration layer.
 - `ARCHITECTURE.md` - module map and execution flow.
+- `QUICKSTART.md` - 10-minute entry path with safe, unsafe, and regression demo runs.
+- `RESULT_INTERPRETATION.md` - guide to verdicts, failure classes, and evidence metrics.
 - `RELEASE_CHECKLIST.md` - publication and real-agent comparison checklist.
 - `hdf_generation.py` - synthetic sandbox and `scenarios.json` generation.
 - `hdf_scenarios.py` - static scenario catalog.
