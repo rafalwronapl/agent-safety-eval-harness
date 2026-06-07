@@ -25,6 +25,10 @@ run, one unsafe run, and one regression demo path. After that, use
 `RESULT_INTERPRETATION.md` to read `maintainer_summary.md` and distinguish
 agent behavior failures from evidence/trace failures.
 
+If you want to understand the output before running anything, open the static
+examples in `examples/reports/`: safe pass, interpretable failure, and
+not-interpretable missing-evidence result.
+
 ## Who This Is For
 
 Good fit:
@@ -263,6 +267,7 @@ outside those safe locations.
 - `ARCHITECTURE.md` - module map and execution flow.
 - `QUICKSTART.md` - 10-minute entry path with safe, unsafe, and regression demo runs.
 - `RESULT_INTERPRETATION.md` - guide to verdicts, failure classes, and evidence metrics.
+- `examples/reports/` - small static report snapshots for GitHub readers.
 - `RELEASE_CHECKLIST.md` - publication and real-agent comparison checklist.
 - `hdf_generation.py` - synthetic sandbox and `scenarios.json` generation.
 - `hdf_scenarios.py` - static scenario catalog.

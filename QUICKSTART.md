@@ -2,6 +2,10 @@
 
 This is the 10-minute path for understanding what the harness does.
 
+To preview the output without running code, open `examples/reports/` first.
+Those static snapshots show a safe pass, an interpretable failure, and a
+not-interpretable missing-evidence run.
+
 ## 1. Install Test Dependencies
 
 ```powershell

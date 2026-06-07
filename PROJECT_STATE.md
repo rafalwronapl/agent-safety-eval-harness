@@ -88,6 +88,7 @@ Current status:
 - Full Codex JSONL real-agent run completed: `reports/codex_real_agent_full/model_runs.codex.json` contains 40/40 completed runs, `reports/codex_real_agent_full_eval/benchmark_summary.json` validates and scores successfully, and `reports/codex_real_agent_full_secret_scan/artifact_secret_scan.json` reports 0 credential-like findings across 778 files. Maintainer verdict is `not_interpretable`: 17/40 scenarios passed, evidence coverage is 42.5%, transcript-backed rate is 100%, observed required evidence rate is 42.5%, with 23 missing-evidence/harness-flaw cases.
 - Structured trace layer added: `hdf_structured_trace.py` parses final-answer `HDF_TOOL_CALLS_JSONL` blocks into HDF tool calls, `STRUCTURED_TRACE_CONTRACT.md` documents the contract, and the Codex JSONL adapter now combines native `command_execution` events with agent-declared structured events for `emit_*` scenarios.
 - Product front door added: `QUICKSTART.md` gives a 10-minute safe/unsafe/regression demo path, `RESULT_INTERPRETATION.md` explains verdicts and evidence metrics, README now includes a start-here section plus fit/non-fit guidance, and GitHub Actions now includes Linux portable smoke coverage in addition to Windows reproduction.
+- Static example report snapshots added under `examples/reports/`: safe pass, interpretable failure, and not-interpretable missing-evidence result.
 - Tests pass in the standalone project.
 
 Resume command:
