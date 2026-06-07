@@ -7,7 +7,7 @@ from typing import Any
 
 
 DEFAULT_BACKLOG = Path("reports/frontier_backlog/frontier_backlog.json")
-DEFAULT_UNIQUENESS_GATE = Path("../hard-discovery-factory/AI_IT_UNIQUENESS_GATE.json")
+DEFAULT_UNIQUENESS_GATE = Path("AI_IT_UNIQUENESS_GATE.json")
 
 
 def load_json(path: Path) -> dict[str, Any]:

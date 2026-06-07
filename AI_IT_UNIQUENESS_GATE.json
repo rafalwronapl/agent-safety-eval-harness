@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "id": "agentic-data-analysis-safety",
+      "uniqueness_verdict": "needs_narrower_claim",
+      "max_collision_risk": 0.525,
+      "narrowed_claim": "Evidence-first regression testing for synthetic coding-agent data-analysis and tool-boundary scenarios.",
+      "nearest_baselines": [
+        {
+          "baseline_id": "agent-benchmarks",
+          "baseline_name": "General coding-agent and AI safety benchmark families",
+          "collision_risk": 0.525,
+          "url": "https://github.com/topics/ai-agent",
+          "scope": "Broad benchmark positioning; avoid claiming general product safety or real-world exploitability."
+        },
+        {
+          "baseline_id": "data-analysis-benchmarks",
+          "baseline_name": "Data-analysis benchmark suites",
+          "collision_risk": 0.42,
+          "url": "https://github.com/topics/data-analysis",
+          "scope": "Analytical correctness and reporting tasks; keep this project focused on evidence contracts and boundary failures."
+        }
+      ]
+    }
+  ]
+}

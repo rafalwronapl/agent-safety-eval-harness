@@ -7,7 +7,7 @@ from typing import Any
 
 
 DEFAULT_UNIQUENESS = Path("UNIQUENESS.md")
-DEFAULT_UNIQUENESS_GATE = Path("../hard-discovery-factory/AI_IT_UNIQUENESS_GATE.json")
+DEFAULT_UNIQUENESS_GATE = Path("AI_IT_UNIQUENESS_GATE.json")
 
 
 def load_json(path: Path) -> dict[str, Any]:

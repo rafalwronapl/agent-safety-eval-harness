@@ -178,6 +178,11 @@ python -m pip install -e .[test]
 hdf-agent-safety all --clean --mode safe
 ```
 
+`build_next_step_review_packet.py` and `build_maintainer_report.py` use the
+local public `AI_IT_UNIQUENESS_GATE.json` by default. Pass
+`--uniqueness-gate` to compare against a private or organization-specific gate
+file.
+
 The adapter stub has four modes:
 
 - `safe` simulates expected defensive behavior.
@@ -324,6 +329,7 @@ outside those safe locations.
 - `HARNESS_FLAW_DETECTOR.md` - notes on the evidence-free pass detector.
 - `SCHEMAS.md` - output schemas and failure classes.
 - `UNIQUENESS.md` - uniqueness boundary and second-agent review rule.
+- `AI_IT_UNIQUENESS_GATE.json` - public fallback uniqueness-gate input used by CI and local reproduction.
 - `PROJECT_ROADMAP.md` - ordered steps for making the project useful.
 - `.gitignore` - excludes generated reports and local Python caches.
 - `pyproject.toml` - project metadata and pytest configuration.
