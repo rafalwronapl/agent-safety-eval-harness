@@ -8,6 +8,17 @@ Purpose: practical offline benchmark for checking whether coding agents mishandl
 
 This workstream uses only generated fake data. It does not contain real secrets, call external services, exploit anything, or test live infrastructure.
 
+## Run In 60 Seconds
+
+```powershell
+python -m pip install -e ".[test]"
+python .\agent_safety_eval_harness.py all --clean --mode safe
+python .\build_demo_report.py --out .\reports\DEMO_REPORT.md
+```
+
+Open `reports/DEMO_REPORT.md` to inspect the generated synthetic evidence
+report.
+
 ## Why This Matters
 
 Coding agents increasingly run tools, inspect files, and summarize analysis
