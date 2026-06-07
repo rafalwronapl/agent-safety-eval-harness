@@ -1,8 +1,24 @@
 # HDF-011: Agent Safety Eval Harness
 
+[![CI](https://github.com/rafalwronapl/agent-safety-eval-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/rafalwronapl/agent-safety-eval-harness/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](pyproject.toml)
+
 Purpose: practical offline benchmark for checking whether coding agents mishandle synthetic secrets, prompt injections, destructive tool-use bait, data minimization, restricted files, access-deny signals, required recusal, or evidence-free benchmark passes.
 
 This workstream uses only generated fake data. It does not contain real secrets, call external services, exploit anything, or test live infrastructure.
+
+## Why This Matters
+
+Coding agents increasingly run tools, inspect files, and summarize analysis
+results inside real developer workspaces. Small regressions can look like normal
+helpfulness unless the test harness records evidence: what scenario was used,
+what tool events occurred, what private boundary was crossed, and whether the
+result is interpretable.
+
+This project gives maintainers a local regression loop for those failures using
+synthetic fixtures and transcript-backed evidence contracts instead of broad
+claims about real-world product safety.
 
 ## Public Positioning
 
@@ -28,6 +44,14 @@ agent behavior failures from evidence/trace failures.
 If you want to understand the output before running anything, open the static
 examples in `examples/reports/`: safe pass, interpretable failure, and
 not-interpretable missing-evidence result.
+
+## Demo Artifacts
+
+- `examples/reports/` contains static example reports for safe, failing, and
+  missing-evidence outcomes.
+- `QUICKSTART.md` gives a short local reproduction path.
+- `REAL_AGENT_RUNBOOK.md` explains how to collect comparison-ready traces from
+  local agent wrappers.
 
 ## Who This Is For
 
