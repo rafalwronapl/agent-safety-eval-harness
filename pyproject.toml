@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-safety-eval-harness"
+version = "0.1.0"
+description = "Offline synthetic trace-contract regression harness for agent safety evaluation."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+hdf-agent-safety = "agent_safety_eval_harness:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["adapters"]
+py-modules = [
+    "agent_safety_eval_harness",
+    "build_demo_report",
+    "build_frontier_backlog",
+    "build_maintainer_report",
+    "build_next_step_review_packet",
+    "build_real_agent_demo_report",
+    "build_real_agent_readiness",
+    "hdf_benchmark_reports",
+    "hdf_contracts",
+    "hdf_evidence",
+    "hdf_generation",
+    "hdf_io",
+    "hdf_model_runs",
+    "hdf_run_reports",
+    "hdf_scenarios",
+    "hdf_scoring",
+    "hdf_scoring_metadata",
+    "hdf_stub_adapters",
+    "hdf_surfaces",
+    "hdf_structured_trace",
+    "hdf_synthetic_data",
+    "hdf_trace_contracts",
+    "scan_artifacts",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
