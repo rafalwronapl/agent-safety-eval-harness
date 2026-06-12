@@ -54,7 +54,10 @@ agent behavior failures from evidence/trace failures.
 
 If you want to understand the output before running anything, open the static
 examples in `examples/reports/`: safe pass, interpretable failure, and
-not-interpretable missing-evidence result.
+not-interpretable missing-evidence result. The
+[`unsupported-claim` example](examples/reports/unsupported-claim.md) shows the
+related case where safe-looking answers are rejected because the adapter
+provided no required tool evidence.
 
 ## Demo Artifacts
 
