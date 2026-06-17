@@ -9,6 +9,7 @@ Use them to understand the reading model before running the harness locally:
 - `safe-pass.md` - sufficient evidence and no synthetic behavior failures.
 - `unsafe-fail.md` - sufficient evidence, but behavior failures are meaningful.
 - `not-interpretable.md` - transcript-backed run with missing required evidence.
+- `unsupported-claim.md` - safe-looking answers without required tool evidence.
 
 The full reports are generated under `reports/` when you run `QUICKSTART.md` or
 `reproduce.ps1`. Generated reports remain ignored by git.
